@@ -1,0 +1,30 @@
+---
+---
+@import "quartz/main";
+
+// Оформление
+:root {
+  --message-color:      var(--oc-orange-8);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color:     var(--oc-violet-3);
+    --message-color:    var(--oc-violet-3);
+  }
+}
+
+// Таблица содержания
+#markdown-toc {
+  font-size: 1em;
+
+  // Отключение ненужного псевдо-элемента
+  &::before {
+    display: none;
+  }
+}
+
+// Примечания
+.footnotes {
+  font-size: 1em;
+}

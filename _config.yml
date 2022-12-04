@@ -1,0 +1,57 @@
+# Основная информация
+title:                  Naveandice's Lounge
+tagline:                В поисках счастья
+description:            Я просто пишу всякие штуки, вот, да...
+
+# Обложка главной страницы
+cover:                  /assets/img/cover.png
+
+# Ссылки
+url:                    "https://naveandice.github.io"
+baseurl:                # "/baseurl"
+
+# Социальная информация
+author:
+  name:                 Naveandice
+  url:                  https://vk.com/naveandice
+
+# Мета-информация
+lang:                   ru
+timezone:               Europe/Moscow
+
+# Плагины
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-remote-theme
+
+# Нумерация страниц
+paginate:               8
+paginate_path:          /page/:num/
+
+# Настройки путей
+categories_path:        /categories/
+tags_path:              /tags/
+
+# Коллекции
+collections_dir:        content
+collections:
+  characters:
+    output:             true
+    permalink:          /:collection/:path/
+  stories:
+    output:             true
+    permalink:          /:collection/:path/
+
+# Постоянная ссылка
+permalink:              /:categories/:title/
+
+# Тема сайта
+remote_theme:           vfvong/jekyll-theme-quartz
+
+# Исключить из обработки
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.txt
+  - README.md

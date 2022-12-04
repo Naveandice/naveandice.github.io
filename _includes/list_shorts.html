@@ -1,0 +1,39 @@
+{% assign shorts = site.stories | where: "category", "shorts" | sort: 'date' | reverse %}
+{% if shorts.size > 0 %}
+  {% if include.extra == 'enabled' %}
+    <h2>Короткие истории</h2>
+  {% endif %}
+  {% for post in shorts {{ include.limit }} %}
+    <article class="post-card">
+      {% if post.image %}
+        <a class="post-card-image-link" href="{{ post.url | relative_url }}">
+          <div class="post-card-image" style="background-image: url({{ post.image | relative_url }})"></div>
+        </a>
+      {% endif %}
+      <div class="post-card-content {% unless post.image %}no-cover{% endunless %}">
+        <a class="post-card-content-link" href="{{ post.url | relative_url }}">
+          <header class="post-card-header">
+            <h2 class="post-card-title">{{ post.title }}</h2>
+          </header>
+          <section class="post-card-excerpt">
+            {% if post.description %}
+              <p>{{ post.description | truncate: 128 }}</p>
+            {% elsif post.excerpt %}
+              <p>{{ post.excerpt | strip_html | truncate: 128 }}</p>
+            {% else %}
+              <p>{{ post.content | strip_html | truncate: 128 }}</p>
+            {% endif %}
+          </section>
+        </a>
+        <footer class="post-card-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">
+            <i class="fa-solid fa-calendar-days"></i> {{ post.date | date_to_string }}
+          </time>
+        </footer>
+      </div>
+    </article>
+  {% endfor %}
+  {% if include.extra == 'enabled' %}
+    <p><em>Хотите больше? Посетите страницу со списком <a href="{{ '/stories/shorts/' | relative_url }}">коротких историй</a>!</em></p>
+  {% endif %}
+{% endif %}

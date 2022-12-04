@@ -1,0 +1,9 @@
+- title: Написать на почту
+  url: mailto:naveandice@gmail.com
+  icon: fa-solid fa-envelope
+- title: ВКонтакте
+  url: https://vk.com/naveandice
+  icon: fa-brands fa-vk
+- title: GitHub
+  url: https://github.com/Naveandice
+  icon: fa-brands fa-github

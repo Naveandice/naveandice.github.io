@@ -1,0 +1,17 @@
+-
+  - title: Архив
+    url: /archive/
+  - title: Категории
+    url: /categories/
+  - title: Теги
+    url: /tags/
+-
+  - title: Персонажи
+    url: /characters/
+  - title: Истории
+    url: /stories/
+-
+  - title: О сайте
+    url: /about/
+  - title: Репозиторий
+    url: https://github.com/Naveandice/naveandice.github.io
