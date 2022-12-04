@@ -9,6 +9,7 @@ cover:                  /assets/img/cover.png
 # Ссылки
 url:                    "https://naveandice.github.io"
 baseurl:                # "/baseurl"
+repository:             Naveandice/naveandice.github.io
 
 # Социальная информация
 author:
