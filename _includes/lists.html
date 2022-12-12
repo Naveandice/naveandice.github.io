@@ -11,7 +11,7 @@
         {% if charstories.size > 0 %}
             <h2>Истории персонажей</h2>
             {% for post in charstories | limit: include.limit %}
-                {% include postcard.html %}
+                {% include post-card.html %}
             {% endfor %}
             {% if charstories.size > include.limit %}
                 <p><em>Хотите больше? Посетите страницу со списком <a href="{{ '/stories/charstories/' | relative_url }}">историй персонажей</a>!</em></p>
@@ -21,7 +21,7 @@
         {% if fanfictions.size > 0 %}
             <h2>Фанатские истории (фанфики)</h2>
             {% for post in fanfictions | limit: include.limit %}
-                {% include postcard.html %}
+                {% include post-card.html %}
             {% endfor %}
             {% if fanfictions.size > include.limit %}
                 <p><em>Хотите больше? Посетите страницу со списком <a href="{{ '/stories/fanfictions/' | relative_url }}">фанатских историй (фанфиков)</a>!</em></p>
@@ -31,7 +31,7 @@
         {% if shorts.size > 0 %}
             <h2>Короткие истории</h2>
             {% for post in shorts | limit: include.limit %}
-                {% include postcard.html %}
+                {% include post-card.html %}
             {% endfor %}
             {% if shorts.size > include.limit %}
                 <p><em>Хотите больше? Посетите страницу со списком <a href="{{ '/stories/shorts/' | relative_url }}">коротких историй</a>!</em></p>
@@ -40,7 +40,7 @@
 
         <h2>Все истории</h2>
         {% for post in stories %}
-            {% include postcard.html %}
+            {% include post-card.html %}
         {% endfor %}
 
     {% endif %}
@@ -49,7 +49,7 @@
 
         {% if charstories.size > 0 %}
             {% for post in charstories %}
-                {% include postcard.html %}
+                {% include post-card.html %}
             {% endfor %}
         {% else %}
             <p style="text-align: center"><em>Кажется, здесь ничего нет. <a href="{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}">Вернёмся на главную?</a></em></p>
@@ -61,7 +61,7 @@
 
         {% if fanfictions.size > 0 %}
             {% for post in fanfictions %}
-                {% include postcard.html %}
+                {% include post-card.html %}
             {% endfor %}
         {% else %}
             <p style="text-align: center"><em>Кажется, здесь ничего нет. <a href="{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}">Вернёмся на главную?</a></em></p>
@@ -73,7 +73,7 @@
 
         {% if shorts.size > 0 %}
             {% for post in shorts %}
-                {% include postcard.html %}
+                {% include post-card.html %}
             {% endfor %}
         {% else %}
             <p style="text-align: center"><em>Кажется, здесь ничего нет. <a href="{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}">Вернёмся на главную?</a></em></p>
