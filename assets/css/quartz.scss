@@ -4,13 +4,14 @@
 
 // Оформление
 :root {
-  --message-color:      var(--oc-orange-8);
+  --accent-color:       var(--oc-orange-6);
+  --message-color:      var(--oc-orange-3);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --accent-color:     var(--oc-violet-3);
-    --message-color:    var(--oc-violet-3);
+    --accent-color:     var(--oc-pink-6);
+    --message-color:    var(--oc-pink-3);
   }
 }
 
