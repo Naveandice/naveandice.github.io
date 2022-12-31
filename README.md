@@ -1,4 +1,4 @@
-# [naveandice.github.io][website] [![Статус сборки](https://img.shields.io/github/workflow/status/Naveandice/naveandice.github.io/Build%20and%20deploy?style=flat-square)][actions] [![Лицензия](https://img.shields.io/github/license/Naveandice/naveandice.github.io?style=flat-square)][mit]
+# [naveandice.github.io][website] [![Статус сборки](https://img.shields.io/github/actions/workflow/status/Naveandice/naveandice.github.io/github-pages.yml?branch=main&style=flat-square)][actions] [![Лицензия](https://img.shields.io/github/license/Naveandice/naveandice.github.io?style=flat-square)][mit]
 
 Репозиторий сайта [**Naveandice's Lounge**][website]
 
