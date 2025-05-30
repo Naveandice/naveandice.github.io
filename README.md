@@ -9,7 +9,7 @@ Naveandice's personal website built with [Astro], [TypeScript] and [Tailwind CSS
 - [x] Initiate Node.js package
 - [x] Install and configure dependencies
 - [x] "Hello, World!"
-- [ ] Configure `withastro/action` workflow
+- [x] Configure `withastro/action` workflow
 
 ## License
 

@@ -140,3 +140,6 @@ dist
 
 # astro cache
 .astro
+
+# package lock file
+package-lock.json
