@@ -1,13 +1,13 @@
 # naveandice.github.io
 
-Naveandice's personal website built with [Astro] and [TypeScript].
+Naveandice's personal website built with [Astro], [TypeScript] and [Tailwind CSS].
 
 ## TODO
 
 - [x] Initiate repository
 - [x] Configure repository
 - [x] Initiate Node.js package
-- [ ] Install and configure dependencies
+- [x] Install and configure dependencies
 - [ ] "Hello, World!"
 - [ ] Configure `withastro/action` workflow
 
@@ -17,4 +17,5 @@ The source code for naveandice.github.io is licensed under [MIT license].
 
 [Astro]:        https://astro.build
 [TypeScript]:   https://typescriptlang.org
+[Tailwind CSS]: https://tailwindcss.com
 [MIT license]:  ./LICENSE
