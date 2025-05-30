@@ -6,7 +6,7 @@ Naveandice's personal website built with [Astro] and [TypeScript].
 
 - [x] Initiate repository
 - [x] Configure repository
-- [ ] Initiate Node.js package
+- [x] Initiate Node.js package
 - [ ] Install and configure dependencies
 - [ ] "Hello, World!"
 - [ ] Configure `withastro/action` workflow

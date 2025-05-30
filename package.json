@@ -1,0 +1,20 @@
+{
+  "name": "naveandice.github.io",
+  "version": "0.1.0",
+  "description": "Naveandice's personal website built with Astro and TypeScript.",
+  "author": "Naveandice (https://naveandice.github.io)",
+  "license": "MIT",
+  "private": true,
+  "homepage": "https://github.com/Naveandice/naveandice.github.io#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Naveandice/naveandice.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Naveandice/naveandice.github.io/issues"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
