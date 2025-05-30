@@ -4,12 +4,7 @@ Naveandice's personal website built with [Astro], [TypeScript] and [Tailwind CSS
 
 ## TODO
 
-- [x] Initiate repository
-- [x] Configure repository
-- [x] Initiate Node.js package
-- [x] Install and configure dependencies
-- [x] "Hello, World!"
-- [x] Configure `withastro/action` workflow
+Moved to [TODO.md](./TODO.md)
 
 ## License
 
