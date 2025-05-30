@@ -135,5 +135,8 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-# VS Code folder
+# vscode folder with settings
 .vscode
+
+# astro cache
+.astro
