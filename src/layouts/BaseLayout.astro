@@ -2,10 +2,12 @@
 import "@styles/global.css";
 
 interface Props {
-  title?: string;
+  pageTitle?: string;
 }
 
-const { title = "Naveandice" } = Astro.props;
+const siteTitle = "Naveandice";
+
+const { pageTitle } = Astro.props;
 ---
 
 <html>
@@ -14,7 +16,7 @@ const { title = "Naveandice" } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>{title}</title>
+    <title>{pageTitle && `${pageTitle} · `}{siteTitle}</title>
   </head>
   <body>
     <slot />
