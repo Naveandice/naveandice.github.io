@@ -7,4 +7,4 @@
 - [x] "Hello, World!"
 - [x] Configure `withastro/action` workflow
 - [x] Create a base layout
-- [ ] Use the base layout to say "Hello, world!"
+- [x] Use the base layout to say "Hello, world!"
