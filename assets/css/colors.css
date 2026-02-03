@@ -1,0 +1,19 @@
+:root {
+	--background: oklch(0.929 0.013 255.508); /* slate-200 */
+	--foreground: oklch(0.279 0.041 260.031); /* slate-800 */
+
+	--link-not-visited: oklch(0.623 0.214 259.815); /* blue-500 */
+	--link-visited: oklch(0.627 0.265 303.9); /* purple-500 */
+	--link-active: oklch(0.637 0.237 25.331); /* red-500 */
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: oklch(0.279 0.041 260.031); /* slate-800 */
+		--foreground: oklch(0.929 0.013 255.508); /* slate-200 */
+
+		--link-not-visited: oklch(0.809 0.105 251.813); /* blue-300 */
+		--link-visited: oklch(0.827 0.119 306.383); /* purple-300 */
+		--link-active: oklch(0.808 0.114 19.571); /* red-300 */
+	}
+}

@@ -8,6 +8,8 @@ this website to Jekyll or whatever static site generator you like.
 Shout out to Simon Willison and their   [Today I Learned][til1]   website where
 I learned that [Jekyll is not required to run a website on GitHub Pages][til2].
 
+Design inspired by <http://bettermotherfuckingwebsite.com>.
+
 ## License
 
 Source code is licensed under MIT License (see [LICENSE](LICENSE) file).

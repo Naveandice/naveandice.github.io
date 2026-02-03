@@ -1,0 +1,53 @@
+@import "colors.css";
+
+*,
+::after,
+::backdrop,
+::before {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: auto;
+	padding-inline: 1rem;
+	max-width: 48rem;
+
+	display: flex;
+	flex-flow: column nowrap;
+
+	background-color: var(--background);
+	color: var(--foreground);
+
+	font-size: 1.25rem;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.15;
+}
+
+a:link {
+	color: var(--link-not-visited);
+}
+
+a:visited {
+	color: var(--link-visited);
+}
+
+a:active {
+	color: var(--link-active);
+}
+
+.lead {
+	font-size: 1.5rem;
+}
