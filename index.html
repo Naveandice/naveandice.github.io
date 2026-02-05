@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -29,20 +29,47 @@
 	</head>
 	<body>
 		<header>
-			<h1>Naveandice!</h1>
+			<h1 id="#top">Naveandice!</h1>
 			<p class="lead">My personal website</p>
+			<nav>
+				<p>Site Navigation</p>
+				<ul>
+					<li><a href="/">Home</a></li>
+				</ul>
+			</nav>
 		</header>
 		<main>
-			<h2>Home</h2>
+			<h2 id="#nav">Home</h2>
+			<nav>
+				<p>Page Navigation</p>
+				<ul>
+					<li><a href="#about_me">About Me</a></li>
+				</ul>
+			</nav>
 			<p>
 				Making a website is not complicated at all. You don't need frameworks.
 				You don't need static site generators. You need just pure HTML, CSS and
-				JavaScript. You can even omit JavaScript — just pure HTMl and CSS.
+				JavaScript. You can even omit JavaScript — just pure HTML and CSS.
 			</p>
+			<section>
+				<h3 id="about_me">About Me</h3>
+				<p>
+					Naveandice (pronounced <em>nave-and-ice</em>). I'm just a random
+					person doing random things on the Internet.
+				</p>
+				<p>
+					<a href="#top">to the top</a> &middot; <a href="#nav">to the nav</a>
+				</p>
+			</section>
 		</main>
 		<footer>
 			<p>
 				Made with 🧊 by <a href="https://github.com/Naveandice">Naveandice</a>
+			</p>
+			<p>
+				<a href="https://github.com/Naveandice/naveandice.github.io">
+					See the source code
+				</a>
 			</p>
 		</footer>
 	</body>

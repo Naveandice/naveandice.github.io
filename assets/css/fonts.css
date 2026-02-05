@@ -1,0 +1,7 @@
+@font-face {
+	font-family: "Noto Serif";
+	src:
+		local("Noto Serif"), url("/assets/fonts/noto/NotoSerif-VariableFont.ttf"),
+		url("/assets/fonts/noto/NotoSerif-Italic-VariableFont.ttf");
+	font-display: swap;
+}
