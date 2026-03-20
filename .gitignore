@@ -1,0 +1,14 @@
+# dependencies
+node_modules/
+
+# Astro cache or something
+.astro/
+
+# Astro build output
+dist/
+
+# TODO: remove after migration to Astro
+.old/
+
+# npm lock file
+package-lock.json

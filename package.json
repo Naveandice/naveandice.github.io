@@ -1,0 +1,17 @@
+{
+  "private": "true",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "prettier": "prettier src/ --write"
+  },
+  "dependencies": {
+    "astro": "^6.0.7"
+  },
+  "devDependencies": {
+    "prettier": "3.8.1",
+    "prettier-plugin-astro": "0.14.1"
+  }
+}
