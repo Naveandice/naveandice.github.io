@@ -1,0 +1,51 @@
+---
+import { siteConfig } from "../global.config";
+
+interface Props {
+  title: string;
+  description?: string;
+  themeColor?: string;
+  imageUrl?: string;
+}
+
+const {
+  title,
+  description = siteConfig.description,
+  themeColor = siteConfig.themeColor,
+  imageUrl = new URL("opengraph.png", Astro.site),
+} = Astro.props;
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>
+      {
+        Astro.url.pathname !== "/"
+          ? `${title} · ${siteConfig.name}`
+          : siteConfig.name
+      }
+    </title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <!-- mostly for a good looking discord embed -->
+    <meta property="og:site_name" content={siteConfig.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={imageUrl} />
+    <meta name="theme-color" content={themeColor} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
