@@ -2,12 +2,5 @@
   "printWidth": 80,
   "bracketSameLine": true,
   "plugins": ["prettier-plugin-astro"],
-  "overrides": [
-    {
-      "files": "*.astro",
-      "options": {
-        "parser": "astro"
-      }
-    }
-  ]
+  "overrides": [{ "files": ["*.astro"], "options": { "parser": "astro" } }]
 }
