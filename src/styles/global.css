@@ -1,0 +1,65 @@
+@import "colors.css";
+
+*,
+::after,
+::backdrop,
+::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: auto;
+  padding-inline: 1rem;
+  max-width: 64rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  background-color: var(--background);
+  color: var(--foreground);
+
+  font-family: var(--font-noto-sans), sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-noto-serif), serif;
+  line-height: 1.15;
+}
+
+a:active {
+  color: var(--link-active);
+}
+
+a:visited {
+  color: var(--link-visited);
+}
+
+a:link {
+  color: var(--link-not-visited);
+}
+
+footer {
+  text-align: center;
+}
+
+code,
+pre,
+kbd {
+  font-family: var(--font-noto-mono), monospace;
+}
+
+.lead {
+  font-size: 1.5rem;
+}

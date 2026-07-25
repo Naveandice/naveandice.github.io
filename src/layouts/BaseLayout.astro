@@ -1,21 +1,26 @@
 ---
-import { siteConfig } from "../global.config";
+import "@/styles/global.css";
+import { Font } from "astro:assets";
+import { globalConfig } from "@/global.config";
+
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
 
 interface Props {
-  title: string;
-  description?: string;
-  themeColor?: string;
-  imageUrl?: string;
+  pageTitle: string;
+  pageDescription?: string;
 }
 
-const {
-  title,
-  description = siteConfig.description,
-  themeColor = siteConfig.themeColor,
-  imageUrl = new URL("opengraph.png", Astro.site),
-} = Astro.props;
+const { pageTitle, pageDescription = globalConfig.siteDescription } =
+  Astro.props;
+
+const title =
+  Astro.url.pathname === "/"
+    ? globalConfig.siteTitle
+    : `${pageTitle} · ${globalConfig.siteTitle}`;
 
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+const imageUrl = new URL("opengraph.png", Astro.site);
 ---
 
 <!doctype html>
@@ -25,27 +30,26 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
 
-    <title>
-      {
-        Astro.url.pathname !== "/"
-          ? `${title} · ${siteConfig.name}`
-          : siteConfig.name
-      }
-    </title>
-    <meta name="description" content={description} />
+    <title>{title}</title>
+    <meta name="description" content={pageDescription} />
     <link rel="canonical" href={canonicalUrl} />
     <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
 
-    <!-- mostly for a good looking discord embed -->
-    <meta property="og:site_name" content={siteConfig.name} />
+    <meta property="og:site_name" content={globalConfig.siteTitle} />
     <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
+    <meta property="og:description" content={pageDescription} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:type" content="website" />
     <meta property="og:image" content={imageUrl} />
-    <meta name="theme-color" content={themeColor} />
+    <meta name="theme-color" content={globalConfig.themeColor} />
+
+    <Font cssVariable="--font-noto-serif" />
+    <Font cssVariable="--font-noto-sans" />
+    <Font cssVariable="--font-noto-mono" />
   </head>
   <body>
+    <Header />
     <slot />
+    <Footer />
   </body>
 </html>

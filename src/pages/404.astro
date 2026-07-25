@@ -1,0 +1,20 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const title = "404 Not Found";
+const description = "Why did you think something like that would exist?";
+---
+
+<BaseLayout pageTitle={title} pageDescription={description}>
+  <h2>{title}</h2>
+  <p>{description}</p>
+  {
+    Astro.url.pathname === "/fishtrap/" && (
+      <p>
+        Also, it's <a href="/fishstrap/">/fishstrap/</a>, not /fishtrap/.
+        Stupid.
+      </p>
+    )
+  }
+  <p><a href="/">Go home</a></p>
+</BaseLayout>

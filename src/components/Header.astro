@@ -1,0 +1,18 @@
+---
+import { globalConfig } from "@/global.config";
+
+const RNGesus = Math.floor(Math.random() * 10000) + 1;
+const spellingMistake = RNGesus === 10000 ? "a fish trap" : "Fishstrap";
+---
+
+<header>
+  <h1>{globalConfig.siteTitle}</h1>
+  <p class="lead">{globalConfig.siteDescription}</p>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/fishstrap/">Also try {spellingMistake}!</a> 🐟</li>
+    </ul>
+  </nav>
+</header>

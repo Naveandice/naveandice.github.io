@@ -1,13 +1,10 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import { siteConfig } from "../global.config";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const title = "Home";
 ---
 
-<BaseLayout title="Home">
-  <h1>{siteConfig.name}</h1>
-  <p>{siteConfig.description}</p>
-  <hr />
-  <p>Hello, world!</p>
-  <p><a href="/about/">About Naveandice</a></p>
-  <p><a href="/fishstrap/">Also try Fishstrap!</a></p>
+<BaseLayout pageTitle={title}>
+  <h2>{title}</h2>
+  <p>Hello! &lt;3 Nothing is here yet.</p>
 </BaseLayout>

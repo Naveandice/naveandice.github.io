@@ -1,14 +1,19 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const title = "About";
+const description = "Here you will learn some things about me.";
 ---
 
-<BaseLayout title="About">
-  <h1>About Naveandice</h1>
-  <hr />
+<BaseLayout pageTitle={title} pageDescription={description}>
+  <h2>{title}</h2>
+  <p>A few fun facts about Naveandice:</p>
   <ul>
     <li>I'm a horse. 🐴</li>
     <li>Unicode for the horse face emoji is <code>U+1F434</code>.</li>
-    <li>Neigh.</li>
+    <li>Horse neighs.</li>
   </ul>
-  <p>I needed a second page to test dynamic titles from BaseLayout.</p>
+  <p>
+    An actual fact about Naveandice: the pronunciation is <em>nave-and-ice</em>.
+  </p>
 </BaseLayout>

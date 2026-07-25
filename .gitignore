@@ -5,6 +5,3 @@ package-lock.json
 # Astro
 .astro/
 dist/
-
-# TODO: remove after migration to Astro
-.old/
