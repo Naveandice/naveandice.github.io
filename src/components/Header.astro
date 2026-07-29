@@ -1,8 +1,5 @@
 ---
 import { globalConfig } from "@/global.config";
-
-const RNGesus = Math.floor(Math.random() * 10000) + 1;
-const spellingMistake = RNGesus === 10000 ? "a fish trap" : "Fishstrap";
 ---
 
 <header>
@@ -12,7 +9,15 @@ const spellingMistake = RNGesus === 10000 ? "a fish trap" : "Fishstrap";
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/about/">About</a></li>
-      <li><a href="/fishstrap/">Also try {spellingMistake}!</a> 🐟</li>
+      <li>
+        <a href="/fishstrap/">Also try <span id="spellingMistake"></span>!</a> 🐟
+      </li>
     </ul>
   </nav>
 </header>
+
+<script>
+  const RNGesus = Math.floor(Math.random() * 10000) + 1;
+  const spellingMistake = RNGesus === 10000 ? "a fish trap" : "Fishstrap";
+  document.getElementById("spellingMistake")!.textContent = spellingMistake;
+</script>
