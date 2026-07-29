@@ -10,3 +10,10 @@ const description = "Why did you think something like that would exist?";
   <p>{description}</p>
   <p><a href="/">Go home</a></p>
 </BaseLayout>
+
+<script>
+  const fishtrap = document.createElement("p");
+  fishtrap.innerHTML = `Also, it's <a href="/fishstrap/">/fishstrap/</a>, not /fishtrap/. Stupid.`;
+  /^\/fishtrap\/?$/.test(window.location.pathname) &&
+    document.getElementsByTagName("main")[0].appendChild(fishtrap);
+</script>
