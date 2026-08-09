@@ -1,0 +1,45 @@
+name: Bug Report
+description: Is something on the website not working?
+labels: ["bug"]
+
+body:
+
+  - type: checkboxes
+    attributes:
+      label: Pre-submit checklist
+      options:
+        - label: I have searched existing issues and this is not a duplicate
+          required: true
+
+  - type: textarea
+    attributes:
+      label: Describe your issue
+      description: What problem have you encountered?
+    validations:
+      requried: true
+
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      description: Provide steps to reproduce your problem.
+      placeholder: |
+        1. Open website ...
+        2. Go to ...
+        3. Do this ...
+        4. See error
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Expected and actual behavior
+      description: What you expected to happen vs. what is actually happening
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Environment
+      description: You may include information about your operating system and web browser.
+    validations:
+      required: false
