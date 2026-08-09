@@ -16,7 +16,7 @@ body:
       label: Describe your issue
       description: What problem have you encountered?
     validations:
-      requried: true
+      required: true
 
   - type: textarea
     attributes:
