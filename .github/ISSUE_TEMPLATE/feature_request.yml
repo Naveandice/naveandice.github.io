@@ -1,0 +1,17 @@
+name: Feature Request
+description: Do you have an idea for the website?
+labels: ["enhancement"]
+
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        > [!IMPORTANT]
+        > Please check existing issues to see if your idea has already been suggested.
+
+  - type: textarea
+    attributes:
+      label: What is your idea?
+    validations:
+      required: true
