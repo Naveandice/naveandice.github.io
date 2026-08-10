@@ -63,3 +63,8 @@ kbd {
 .lead {
   font-size: 1.5rem;
 }
+
+.build-metadata {
+  font-size: 1rem;
+  opacity: 50%;
+}

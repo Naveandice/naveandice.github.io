@@ -1,0 +1,18 @@
+---
+const timestamp = new Date().toLocaleString("en", {
+  dateStyle: "full",
+  timeStyle: "long",
+  timeZone: "UTC",
+});
+
+const commitHash = import.meta.env.COMMIT_SHA;
+const commitRef = import.meta.env.COMMIT_REF;
+const isActionBuild = commitHash !== undefined && commitRef !== undefined;
+
+const buildMetadata = [`Built with ${Astro.generator}`, timestamp];
+
+isActionBuild &&
+  buildMetadata.push(`commit ${commitHash.slice(0, 7)} (${commitRef})`);
+---
+
+<p class="build-metadata">{buildMetadata.join(" · ")}</p>
