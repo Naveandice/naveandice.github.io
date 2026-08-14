@@ -17,3 +17,24 @@ const description = "Here you will learn some things about me.";
     An actual fact about Naveandice: the pronunciation is <em>nave-and-ice</em>.
   </p>
 </BaseLayout>
+
+<script>
+  const keys: string[] = [];
+  const expectedKeys = "naveandice";
+  let isTriggered = false;
+
+  document.addEventListener("keydown", function handleEvent(e) {
+    if (isTriggered || e.key.length > 1) return;
+
+    if (keys.length >= expectedKeys.length) keys.shift();
+    const key = e.key.toLowerCase();
+    keys.push(key);
+
+    if (keys.join("") === expectedKeys) {
+      isTriggered = true;
+      alert("Oh hey, you found me!");
+      keys.length = 0;
+      this.removeEventListener("keydown", handleEvent);
+    }
+  });
+</script>
