@@ -10,14 +10,14 @@
     "prettier:write": "prettier src/ --write"
   },
   "dependencies": {
-    "astro": "^7.1.3"
+    "astro": "^7.3.2"
   },
   "devDependencies": {
-    "prettier": "^3.8.3",
-    "prettier-plugin-astro": "0.14.1"
+    "prettier": "^3.9.6",
+    "prettier-plugin-astro": "^0.14.1"
   },
   "allowScripts": {
     "sharp@0.34.5": true,
-    "esbuild@0.28.1": true
+    "esbuild@0.28.2": true
   }
 }
