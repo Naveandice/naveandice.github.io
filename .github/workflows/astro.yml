@@ -28,7 +28,6 @@ jobs:
         with:
           node-version: 24
           package-manager: npm@latest
-          build-cmd: npm run astro:build
 
   deploy:
     needs: build

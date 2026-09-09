@@ -2,12 +2,14 @@
   "private": "true",
   "type": "module",
   "scripts": {
-    "astro:build": "astro build",
-    "astro:preview": "astro preview",
-    "astro:serve/dev": "astro dev",
-    "astro:serve/prod": "astro build && astro preview",
-    "prettier:check": "prettier src/ --check",
-    "prettier:write": "prettier src/ --write"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+
+    "start": "astro dev --background",
+    "stop": "astro dev stop",
+
+    "lint": "prettier src/ --write"
   },
   "dependencies": {
     "astro": "^7.3.2"
