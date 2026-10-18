@@ -3,7 +3,6 @@ description: Is something on the website not working?
 labels: ["bug"]
 
 body:
-
   - type: checkboxes
     attributes:
       label: Pre-submit checklist
