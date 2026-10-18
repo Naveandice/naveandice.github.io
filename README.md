@@ -2,10 +2,11 @@
 
 This repository contains the source code for <https://naveandice.github.io>.
 
-Built with [Astro] using [Node.js] + NPM.
+Built with [Astro] using [Bun] (I hate this so much, yet it's faster than NPM so
+there's nothing I can do).
 
 [Astro]: https://astro.build
-[Node.js]: https://nodejs.org
+[Bun]: https://bun.com
 
 ## License
 

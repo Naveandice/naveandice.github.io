@@ -1,7 +1,8 @@
-# Node.js
+# Node (Bun) dependencies
 node_modules/
-package-lock.json
 
-# Astro
+# Astro types
 .astro/
+
+# Astro build output
 dist/

@@ -23,11 +23,11 @@ jobs:
       - name: Build with Astro
         uses: withastro/action@v6
         env:
-          COMMIT_SHA: '${{ github.sha }}'
-          COMMIT_REF: '${{ github.ref_type }}/${{ github.ref_name }}'
+          COMMIT_SHA: "${{ github.sha }}"
+          COMMIT_REF: "${{ github.ref_type }}/${{ github.ref_name }}"
         with:
           node-version: 24
-          package-manager: npm@latest
+          package-manager: bun@latest
 
   deploy:
     needs: build
